@@ -14,11 +14,11 @@ let _currentId = 1;
 
 
 function initTextLayout(){
-  return {x: 0, y: 0, w: 2, h: 10};
+  return {x: 0, y: 0, w: 2, h: 2};
 }
 
 function initSidebarLayout(){
-  return {x: 0, y: 0, w: 1, h: 7};
+  return {x: 0, y: 0, w: 1, h: 1};
 }
 
 function addBlock() {

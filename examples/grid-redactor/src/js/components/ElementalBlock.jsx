@@ -26,7 +26,7 @@ let ElementalBlock = React.createClass({
     return (
       <div {...this.props}>
         {innerComponent}
-        <ButtonGroup>
+        <ButtonGroup className="tweek-block">
           <Button onClick={this._onRemoveClick}><Glyphicon glyph='remove' /></Button>
           <Button onClick={this._onSwitchClick}><Glyphicon glyph='refresh' /></Button>
         </ButtonGroup>

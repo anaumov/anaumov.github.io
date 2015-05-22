@@ -46,3 +46,8 @@ body {
 .react-grid-item .add {
   cursor: pointer;
 }
+.tweek-block{
+  position: absolute;
+  top: 0;
+  right: 0;
+}

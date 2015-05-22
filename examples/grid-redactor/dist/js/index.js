@@ -42564,7 +42564,7 @@ var ElementalBlock = React.createClass({ displayName: 'ElementalBlock',
       innerComponent = React.createElement(SidebarBlock, null);
     }
 
-    return React.createElement('div', React.__spread({}, this.props), innerComponent, React.createElement(ButtonGroup, null, React.createElement(Button, { onClick: this._onRemoveClick }, React.createElement(Glyphicon, { glyph: 'remove' })), React.createElement(Button, { onClick: this._onSwitchClick }, React.createElement(Glyphicon, { glyph: 'refresh' }))));
+    return React.createElement('div', React.__spread({}, this.props), innerComponent, React.createElement(ButtonGroup, { className: 'tweek-block' }, React.createElement(Button, { onClick: this._onRemoveClick }, React.createElement(Glyphicon, { glyph: 'remove' })), React.createElement(Button, { onClick: this._onSwitchClick }, React.createElement(Glyphicon, { glyph: 'refresh' }))));
   },
 
   _onSwitchClick: function _onSwitchClick() {
@@ -42636,7 +42636,7 @@ var GridLayout = React.createClass({ displayName: 'GridLayout',
   render: function render() {
     return React.createElement(ReactGridLayout, {
       cols: 4,
-      rowHeight: 60,
+      rowHeight: 300,
       verticalCompact: false,
       onLayoutChange: this.onLayoutChange,
       layout: this.state.layout }, this._blocksDOM());
@@ -42655,7 +42655,7 @@ var React = require("react");
 
 var SidebarBlock = React.createClass({ displayName: "SidebarBlock",
   render: function render() {
-    return React.createElement("div", null, React.createElement("h1", null, "Илья Муромец"), React.createElement("img", { src: "images/ilya_muromec.jpg", style: { width: "150px" } }), React.createElement("p", null, "Общее название нескольких серий четырёхмоторных цельнодеревянных бипланов, выпускавшихся в России на Русско-Балтийском вагонном заводе в течение 1913—1918 гг. На самолёте поставлен ряд рекордов грузоподъемности, числа пассажиров, времени и максимальной высоты полёта."));
+    return React.createElement("div", null, React.createElement("h3", null, "Илья Муромец"), React.createElement("img", { src: "images/ilya_muromec.jpg", style: { width: "150px" } }), React.createElement("p", null, "Общее название нескольких серий четырёхмоторных цельнодеревянных бипланов, выпускавшихся в России на Русско-Балтийском вагонном заводе в течение 1913—1918 гг."));
   }
 
 });
@@ -42669,7 +42669,7 @@ var React = require("react");
 
 var TextBlock = React.createClass({ displayName: "TextBlock",
   render: function render() {
-    return React.createElement("div", null, React.createElement("h1", null, "Ту 144"), React.createElement("img", { src: "images/tu_144.jpg", style: { width: "335px" } }), React.createElement("p", null, "Самолёт не имел таких элементов конструкции крыла, как закрылки и предкрылки. Снижение посадочной скорости до приемлемых значений в 350—400 километров в час осуществлялось уникальным для гражданских самолётов способом: при помощи отклоняемого носка фюзеляжа и выпускаемого переднего крыла. В полёте на сверхзвуковой скорости рекомендовалось не пользоваться элевонами — управление осуществлялось изменением тяги двигателей. Самолёт не имел реверса тяги двигателей, но имел мощные вентиляторы тормозов в шасси, первоначальное гашение скорости при посадке, по усмотрению командира экипажа, осуществлялось выпуском тормозного парашюта."));
+    return React.createElement("div", null, React.createElement("h1", null, "Ту 144"), React.createElement("img", { src: "images/tu_144.jpg", style: { width: "335px" } }), React.createElement("p", null, "Самолёт не имел таких элементов конструкции крыла, как закрылки и предкрылки. Снижение посадочной скорости до приемлемых значений в 350—400 километров в час осуществлялось уникальным для гражданских самолётов способом: при помощи отклоняемого носка фюзеляжа и выпускаемого переднего крыла. В полёте на сверхзвуковой скорости рекомендовалось не пользоваться элевонами — управление осуществлялось изменением тяги двигателей. Самолёт не имел реверса тяги двигателей, но имел мощные вентиляторы тормозов в шасси, первоначальное гашение скорости при посадке, по усмотрению командира экипажа, осуществлялось выпуском тормозного парашюта."), React.createElement("p", null, "Первый рабочий рейс — 26 декабря 1975 года по маршруту Москва — Алма-Ата, самолёт перевез почтовые отправления, а с 1 ноября 1977 года на том же направлении начались и пассажирские перевозки."));
   }
 
 });
@@ -42765,11 +42765,11 @@ var _data = [{ id: 0, type: 'text', layout: initTextLayout() }, { id: 1, type: '
 var _currentId = 1;
 
 function initTextLayout() {
-  return { x: 0, y: 0, w: 2, h: 10 };
+  return { x: 0, y: 0, w: 2, h: 2 };
 }
 
 function initSidebarLayout() {
-  return { x: 0, y: 0, w: 1, h: 7 };
+  return { x: 0, y: 0, w: 1, h: 1 };
 }
 
 function addBlock() {

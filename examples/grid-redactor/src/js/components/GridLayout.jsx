@@ -56,7 +56,7 @@ let GridLayout = React.createClass({
     return (
       <ReactGridLayout
         cols={4}
-        rowHeight={60}
+        rowHeight={200}
         verticalCompact={false}
         onLayoutChange={this.onLayoutChange}
         layout={this.state.layout}>
