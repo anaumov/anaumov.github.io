@@ -1,0 +1,209 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  text-decoration: none;
+  line-height: inherit;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:focus {
+  outline: none;
+}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,p,blockquote,th,td {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  text-rendering: optimizeLegibility;
+  color:#666;
+}
+
+@import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700);
+@import url(http://fonts.googleapis.com/css?family=Merriweather);
+
+@font-face {
+  font-family: 'fontello';
+  src: url("font/fontello.eot");
+  src: url("font/fontello.eot?#iefix") format('embedded-opentype'), url("font/fontello.woff") format('woff'), url("font/fontello.ttf") format('truetype'), url("font/fontello.svg#fontello") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}body{
+  font-family: 'PT Sans', sans-serif;
+  font-size: 14px;
+  font-size: 1.4rem;
+  line-height: 1;
+  color: #222222;
+  position: relative;
+}
+#main{
+	width:98%;
+	margin:1%;
+	background-color: #FFF;
+}
+
+h1,h2,h3,h6,h5.about_subtitle,
+#hovercard h2,
+h3.achievement_title{
+	font-family: 'Merriweather', Georgia, serif;
+    font-style: normal;
+    font-weight: 400;
+}
+h4,h5,p,
+.subtitle,
+#hovercard p.subtitle,
+.awsm-info h3,
+.awsm-info a.button {
+	font-family: 'PT Sans', Arial, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+h2 {
+    font-size: 52px;
+    line-height: 60px;
+    margin-bottom: 25px;
+}
+
+
+
+p {
+	font-size: 16px;
+    line-height: 25px;
+    color: #222222;
+}
+
+.hero-image-parent{
+	position: relative;
+	height: 320px;
+	width: 320px;
+	margin: 50px auto 25px;
+	border-radius: 50%;
+	border: 1px dashed #DDD;
+}
+
+.hero-image-holder{
+ 	width: 250px;
+    height: 250px;
+    position: relative;
+    margin: 35px auto;
+}
+.hero-image.hero_animate{
+	width: 250px;
+    height: 250px;
+    background-size: 100% 100%;
+    margin: -125px 0 0 -125px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+}
+.hero-image {
+ 	position: absolute;
+    top: 50%;
+    left: 50%;
+    overflow: hidden;
+    background-size: 100% 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin: 0;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+
+	width: 0;
+	height: 0;
+
+	-webkit-box-shadow: inset 0 0 0 4px rgba(255,255,255,0.6), 0 1px 2px rgba(0,0,0,0.1);
+	box-shadow: inset 0 0 0 4px rgba(255,255,255,0.6), 0 1px 2px rgba(0,0,0,0.1);
+
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    -ms-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+}
+.zero_margin{
+	margin:0;
+}
+.name-box,
+.main-title,
+.tc{
+	text-align:center;
+}
+.pos{
+	position: absolute;
+	display: block;
+	height: 43px;
+	width: 43px;
+	background-color: #fff;
+	border: 1px solid #DDD;
+	border-radius: 50%;
+	z-index: 100;
+  background-size: contain;
+	/*You can make some css3 animations here*/
+/*	-webkit-transition: all .25s linear;
+	   -moz-transition: all .25s linear;
+	    -ms-transition: all .25s linear;
+	     -o-transition: all .25s linear;
+	        transition: all .25s linear;*/
+	opacity:0;
+}
+.pos_1{
+	top: 265px;
+	left: 45px;
+  background-image: url('../img/git.png');
+}
+
+.pos_2{
+	top: 265px;
+	left: 235px;
+  background-image: url('../img/angel.png');
+}
+
+.pos span{
+	display: none;
+	top: 0;
+}
+.pos:hover span{
+	display: block;
+	position: absolute;
+	top: -30px;
+	left: 50%;
+	text-align: center;
+	background: rgba(0, 0, 0, 0.8);
+	color: #FFF;
+	font-size: 11px;
+	line-height: 1.2em;
+	padding: 5px 10px;
+	border-radius: 8px;
+	width: 100px;
+	margin-left: -50px;
+}
+.pos span:after{
+	position: absolute;
+	display: block;
+	content: "";
+	border-color: rgba(0, 0, 0, 0.8) transparent transparent transparent;
+	border-style: solid;
+	border-width: 8px;
+	height:0;
+	width:0;
+	bottom:-16px;
+	left:40px;
+}
